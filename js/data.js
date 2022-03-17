@@ -6,9 +6,23 @@ function inicio() {
     verApi(document.querySelector("#texto").value);
 }
 
-async function verApi(x) {
-    fetch('https://pokeapi.co/api/v2/pokemon/')
+function verApi(x) {
+    let url = 'https://pokeapi.co/api/v2/pokemon'
+    let nombre = x;
+    fetch(`${url}/${nombre} `)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => htmlListo(data))
 
+
+}
+
+function htmlListo(data) {
+    console.log(data);
+    const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
+    const imgPokemon = document.querySelector("#imgPokemon");
+
+    imgPokemon.src = url;
+
+    const nombrePokemon = document.querySelector(".nombrePokemon")
+    nombrePokemon.innerText = data.name
 }

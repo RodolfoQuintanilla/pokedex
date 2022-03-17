@@ -105,6 +105,7 @@ form {
 .mandos {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .boton1 {
@@ -123,4 +124,23 @@ form {
     margin-top: 20px;
     width: 130px;
     height: 40px;
+
+}
+
+.imagenes {
+    display: flex;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+
+}
+
+.nombrePokemon {
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+.nombrePokemon p {
+    margin: auto;
 }

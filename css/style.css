@@ -144,3 +144,44 @@ form {
 .nombrePokemon p {
     margin: auto;
 }
+
+.parteDos {}
+
+.informacion {
+
+
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: -300px;
+    margin-left: 23px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#peso {
+    margin-top: 0px;
+}
+
+.cuadrotes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+
+.cuadrito {
+    margin-top: 10px;
+    background-color: #0492ca;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: #2d2d2d solid 1px;
+}
+
+.cuadrotes2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: -10px;
+    ;
+}

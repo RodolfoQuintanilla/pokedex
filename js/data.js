@@ -4,6 +4,7 @@ const formulario = document.querySelector(".formulario");
 function inicio() {
 
     verApi(document.querySelector("#texto").value);
+    limpiar();
 }
 
 function verApi(x) {
@@ -25,4 +26,16 @@ function htmlListo(data) {
 
     const nombrePokemon = document.querySelector(".nombrePokemon")
     nombrePokemon.innerText = data.name
+    const alto = document.querySelector('#alto');
+    alto.innerHTML = `Altura: ${data.height * 10} cm `
+
+    const peso = document.querySelector('#peso');
+    peso.innerHTML = ` Peso: ${data.weight / 10
+        }kg`
+
+
+}
+
+function limpiar() {
+    document.querySelector("#texto").value = "";
 }
